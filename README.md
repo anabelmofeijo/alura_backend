@@ -1,7 +1,4 @@
 
----
-
-```markdown
 # 🏥 Alura – Sistema Inteligente de Diagnóstico Médico
 
 O **Alura** é um sistema inteligente desenvolvido para auxiliar no diagnóstico de doenças comuns em Angola, analisando **sintomas e sinais vitais** dos pacientes. A plataforma identifica a gravidade do quadro clínico com base no **Protocolo de Manchester** e usa **Machine Learning** e **Análise de Dados** para melhorar a eficiência na tomada de decisão.
@@ -58,11 +55,10 @@ Ao pressionar "**+Informações**", o paciente é redirecionado para uma página
 ## 🏗 Estrutura do Projeto (Arquitetura MVC)
 
 ```
-
-/alura\_backend
+/alura_backend
 │
 ├── app/
-│   ├── **init**.py               # Inicializa Flask
+│   ├── __init__.py               # Inicializa Flask
 │   ├── config.py                 # Configurações (BD, chave secreta)
 │
 │   ├── models/                   # MODELS (estrutura do banco de dados)
@@ -73,15 +69,15 @@ Ao pressionar "**+Informações**", o paciente é redirecionado para uma página
 │   │   └── diagnosis.py
 │
 │   ├── controllers/              # CONTROLLERS (lógica do sistema)
-│   │   ├── auth\_controller.py
-│   │   ├── patient\_controller.py
-│   │   ├── diagnosis\_controller.py
-│   │   └── ml\_controller.py
+│   │   ├── auth_controller.py
+│   │   ├── patient_controller.py
+│   │   ├── diagnosis_controller.py
+│   │   └── ml_controller.py
 │
 │   ├── routes/                   # VIEWS (rotas)
-│   │   ├── auth\_routes.py
-│   │   ├── patient\_routes.py
-│   │   └── diagnosis\_routes.py
+│   │   ├── auth_routes.py
+│   │   ├── patient_routes.py
+│   │   └── diagnosis_routes.py
 │
 │   ├── services/                 # Funções auxiliares
 │   │   └── utils.py              # Código Manchester etc.
@@ -93,8 +89,7 @@ Ao pressionar "**+Informações**", o paciente é redirecionado para uma página
 ├── run.py                        # Arquivo principal para executar o app
 ├── requirements.txt              # Dependências do projeto
 └── README.md                     # Este documento
-
-````
+```
 
 ---
 
@@ -136,14 +131,14 @@ Bibliotecas utilizadas:
 ```bash
 git clone https://github.com/seu-usuario/alura_backend.git
 cd alura_backend
-````
+```
 
 2. Crie o ambiente virtual:
 
 ```bash
 python -m venv venv
 source venv/bin/activate       # Linux/macOS
-venv\Scripts\activate          # Windows
+venv\Scripts\activate        # Windows
 ```
 
 3. Instale as dependências:
@@ -178,12 +173,12 @@ model.h5
 
 ## 📚 Requisitos
 
-* Python 3.9+
-* Flask
-* Flask SQLAlchemy
-* TensorFlow
-* Pandas
-* NumPy
+- Python 3.9+
+- Flask
+- Flask SQLAlchemy
+- TensorFlow
+- Pandas
+- NumPy
 
 ---
 
@@ -198,5 +193,3 @@ Desenvolvido por **Anabelmo Feijo**
 Projeto licenciado sob os termos da **MIT License**.
 
 ---
-
-`
